@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace SSitdikov\ATOL\Object;
+namespace custanator\ATOL\Object;
 
 /**
  * Class MoneyTransferOperator.
  * Атрибуты оператора перевода.
  *
- * @package SSitdikov\ATOL\Object
+ * @package custanator\ATOL\Object
  */
 class MoneyTransferOperator implements \JsonSerializable
 {

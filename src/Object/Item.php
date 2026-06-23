@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace SSitdikov\ATOL\Object;
+namespace custanator\ATOL\Object;
 
 /**
  * Class Item.
  *
- * @package SSitdikov\ATOL\Object
+ * @package custanator\ATOL\Object
  */
 class Item implements \JsonSerializable
 {

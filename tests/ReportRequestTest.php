@@ -1,11 +1,11 @@
 <?php
 
-namespace SSitdikov\ATOL\Tests;
+namespace custanator\ATOL\Tests;
 
 use PHPUnit\Framework\TestCase;
-use SSitdikov\ATOL\Request\ReportRequest;
-use SSitdikov\ATOL\Request\RequestInterface;
-use SSitdikov\ATOL\Response\TokenResponse;
+use custanator\ATOL\Request\ReportRequest;
+use custanator\ATOL\Request\RequestInterface;
+use custanator\ATOL\Response\TokenResponse;
 
 class ReportRequestTest extends TestCase
 {

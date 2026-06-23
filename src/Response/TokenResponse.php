@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SSitdikov\ATOL\Response;
+namespace custanator\ATOL\Response;
 
 use DateTime;
 use Exception;
@@ -11,7 +11,7 @@ use stdClass;
 /**
  * Class TokenResponse.
  *
- * @package SSitdikov\ATOL\Response
+ * @package custanator\ATOL\Response
  *
  * @author  Salavat Sitdikov <sitsalavat@gmail.com>
  */

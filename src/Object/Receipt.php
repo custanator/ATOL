@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace SSitdikov\ATOL\Object;
+namespace custanator\ATOL\Object;
 
 /**
  * Class Receipt.
  *  «Приход», «Возврат прихода», «Расход», «Возврат расхода»
  *
- * @package SSitdikov\ATOL\Object
+ * @package custanator\ATOL\Object
  */
 class Receipt implements \JsonSerializable
 {

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace SSitdikov\ATOL\Object;
+namespace custanator\ATOL\Object;
 
 /**
  * Class Payment.
  *
- * @package SSitdikov\ATOL\Object
+ * @package custanator\ATOL\Object
  */
 class Payment implements \JsonSerializable
 {

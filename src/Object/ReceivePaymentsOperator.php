@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace SSitdikov\ATOL\Object;
+namespace custanator\ATOL\Object;
 
 /**
  * Class ReceivePaymentsOperator.
  * Атрибуты оператора по приему платежей.
  *
- * @package SSitdikov\ATOL\Object
+ * @package custanator\ATOL\Object
  */
 class ReceivePaymentsOperator implements \JsonSerializable
 {

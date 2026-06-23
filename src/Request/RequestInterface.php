@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace SSitdikov\ATOL\Request;
+namespace custanator\ATOL\Request;
 
-use SSitdikov\ATOL\Response\ResponseInterface;
+use custanator\ATOL\Response\ResponseInterface;
 
 /**
  * Interface RequestInterface.
  *
- * @package SSitdikov\ATOL\Request
+ * @package custanator\ATOL\Request
  */
 interface RequestInterface
 {

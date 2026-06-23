@@ -7,7 +7,7 @@
  * Time: 7:03
  */
 
-namespace SSitdikov\ATOL\Tests;
+namespace custanator\ATOL\Tests;
 
 use Exception;
 use GuzzleHttp\Client;
@@ -17,13 +17,13 @@ use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
-use SSitdikov\ATOL\Client\ApiClient;
-use SSitdikov\ATOL\Object\Info;
-use SSitdikov\ATOL\Object\Receipt;
-use SSitdikov\ATOL\Request\OperationRequest;
-use SSitdikov\ATOL\Request\ReportRequest;
-use SSitdikov\ATOL\Request\TokenRequest;
-use SSitdikov\ATOL\Response\TokenResponse;
+use custanator\ATOL\Client\ApiClient;
+use custanator\ATOL\Object\Info;
+use custanator\ATOL\Object\Receipt;
+use custanator\ATOL\Request\OperationRequest;
+use custanator\ATOL\Request\ReportRequest;
+use custanator\ATOL\Request\TokenRequest;
+use custanator\ATOL\Response\TokenResponse;
 
 class ApiClientTest extends TestCase
 {

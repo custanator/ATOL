@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace SSitdikov\ATOL\Request;
+namespace custanator\ATOL\Request;
 
 use Exception;
-use SSitdikov\ATOL\Response\ResponseInterface;
-use SSitdikov\ATOL\Response\TokenResponse;
+use custanator\ATOL\Response\ResponseInterface;
+use custanator\ATOL\Response\TokenResponse;
 
 /**
  * Class TokenRequest.
  *
- * @package SSitdikov\ATOL\Request
+ * @package custanator\ATOL\Request
  *
  * @author  Salavat Sitdikov <sitsalavat@gmail.com>
  */

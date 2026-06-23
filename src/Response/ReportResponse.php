@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace SSitdikov\ATOL\Response;
+namespace custanator\ATOL\Response;
 
 use stdClass;
 
 /**
  * Class ReportResponse.
  *
- * @package SSitdikov\ATOL\Response
+ * @package custanator\ATOL\Response
  */
 class ReportResponse implements ResponseInterface
 {

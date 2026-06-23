@@ -1,19 +1,19 @@
 <?php
 
-use \SSitdikov\ATOL\Client\ApiClient;
-use \SSitdikov\ATOL\Response\OperationResponse;
-use \SSitdikov\ATOL\Response\TokenResponse;
-use \SSitdikov\ATOL\Request\TokenRequest;
-use \SSitdikov\ATOL\Request\OperationRequest;
-use \SSitdikov\ATOL\Request\ReportRequest;
-use \SSitdikov\ATOL\Object\Info;
-use \SSitdikov\ATOL\Object\Item;
-use \SSitdikov\ATOL\Object\Payment;
-use \SSitdikov\ATOL\Object\Receipt;
-use \SSitdikov\ATOL\Object\ReceiptSno;
-use \SSitdikov\ATOL\Object\Vat;
-use \SSitdikov\ATOL\Object\Company;
-use \SSitdikov\ATOL\Object\Client;
+use \custanator\ATOL\Client\ApiClient;
+use \custanator\ATOL\Response\OperationResponse;
+use \custanator\ATOL\Response\TokenResponse;
+use \custanator\ATOL\Request\TokenRequest;
+use \custanator\ATOL\Request\OperationRequest;
+use \custanator\ATOL\Request\ReportRequest;
+use \custanator\ATOL\Object\Info;
+use \custanator\ATOL\Object\Item;
+use \custanator\ATOL\Object\Payment;
+use \custanator\ATOL\Object\Receipt;
+use \custanator\ATOL\Object\ReceiptSno;
+use \custanator\ATOL\Object\Vat;
+use \custanator\ATOL\Object\Company;
+use \custanator\ATOL\Object\Client;
 
 require __DIR__ . '/../vendor/autoload.php';
 

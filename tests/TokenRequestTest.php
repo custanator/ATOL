@@ -1,10 +1,10 @@
 <?php
 
-namespace SSitdikov\ATOL\Tests;
+namespace custanator\ATOL\Tests;
 
 use PHPUnit\Framework\TestCase;
-use SSitdikov\ATOL\Request\RequestInterface;
-use SSitdikov\ATOL\Request\TokenRequest;
+use custanator\ATOL\Request\RequestInterface;
+use custanator\ATOL\Request\TokenRequest;
 use function json_decode;
 
 class TokenRequestTest extends TestCase

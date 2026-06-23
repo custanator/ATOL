@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace SSitdikov\ATOL\Request;
+namespace custanator\ATOL\Request;
 
 use Exception;
-use SSitdikov\ATOL\Response\ReportResponse;
-use SSitdikov\ATOL\Response\ResponseInterface;
-use SSitdikov\ATOL\Response\TokenResponse;
+use custanator\ATOL\Response\ReportResponse;
+use custanator\ATOL\Response\ResponseInterface;
+use custanator\ATOL\Response\TokenResponse;
 
 /**
  * Class ReportRequest.
  *
- * @package SSitdikov\ATOL\Request
+ * @package custanator\ATOL\Request
  */
 class ReportRequest implements RequestInterface
 {

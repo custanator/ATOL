@@ -1,19 +1,19 @@
 <?php
 
-namespace SSitdikov\ATOL\Tests;
+namespace custanator\ATOL\Tests;
 
 use PHPUnit\Framework\TestCase;
-use SSitdikov\ATOL\Object\Client;
-use SSitdikov\ATOL\Object\Company;
-use SSitdikov\ATOL\Object\Info;
-use SSitdikov\ATOL\Object\Item;
-use SSitdikov\ATOL\Object\Payment;
-use SSitdikov\ATOL\Object\Receipt;
-use SSitdikov\ATOL\Object\ReceiptSno;
-use SSitdikov\ATOL\Object\Vat;
-use SSitdikov\ATOL\Request\OperationRequest;
-use SSitdikov\ATOL\Request\RequestInterface;
-use SSitdikov\ATOL\Response\TokenResponse;
+use custanator\ATOL\Object\Client;
+use custanator\ATOL\Object\Company;
+use custanator\ATOL\Object\Info;
+use custanator\ATOL\Object\Item;
+use custanator\ATOL\Object\Payment;
+use custanator\ATOL\Object\Receipt;
+use custanator\ATOL\Object\ReceiptSno;
+use custanator\ATOL\Object\Vat;
+use custanator\ATOL\Request\OperationRequest;
+use custanator\ATOL\Request\RequestInterface;
+use custanator\ATOL\Response\TokenResponse;
 
 class OperationRequestTest extends TestCase
 {

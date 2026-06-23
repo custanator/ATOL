@@ -14,7 +14,7 @@
 Предполагается установка с использованием composer
 
 ```
-composer require ssitdikov/atol
+composer require custanator/atol
 ```
 
 ## Пример использования

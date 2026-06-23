@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace SSitdikov\ATOL\Client;
+namespace custanator\ATOL\Client;
 
-use SSitdikov\ATOL\Request\CorrectionRequest;
-use SSitdikov\ATOL\Request\OperationRequest;
-use SSitdikov\ATOL\Request\ReportRequest;
-use SSitdikov\ATOL\Request\RequestInterface;
-use SSitdikov\ATOL\Request\TokenRequest;
-use SSitdikov\ATOL\Response\OperationResponse;
-use SSitdikov\ATOL\Response\ReportResponse;
-use SSitdikov\ATOL\Response\TokenResponse;
+use custanator\ATOL\Request\CorrectionRequest;
+use custanator\ATOL\Request\OperationRequest;
+use custanator\ATOL\Request\ReportRequest;
+use custanator\ATOL\Request\RequestInterface;
+use custanator\ATOL\Request\TokenRequest;
+use custanator\ATOL\Response\OperationResponse;
+use custanator\ATOL\Response\ReportResponse;
+use custanator\ATOL\Response\TokenResponse;
 
 /**
  * Interface IClient.
  *
- * @package SSitdikov\ATOL\Client
+ * @package custanator\ATOL\Client
  */
 interface IClient
 {
