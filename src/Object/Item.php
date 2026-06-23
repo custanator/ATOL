@@ -391,7 +391,7 @@ class Item implements \JsonSerializable
             'vat'               => $this->getVat(),
             'payment_object'    => $this->getPaymentObject(),
             'payment_method'    => $this->getPaymentMethod(),
-            'measure'           => $this->getMeasurementUnit(),
+            'measure'           => $this->getMeasure(),
             'agent_info'        => $this->getAgentInfo(),
             'supplier_info'     => $this->getSupplierInfo(),
         ], function ($property) {
@@ -587,7 +587,7 @@ class Item implements \JsonSerializable
     /**
      * @return int
      */
-    public function getMeasurementUnit(): int
+    public function getMeasure(): int
     {
         return $this->measure;
     }
@@ -598,7 +598,7 @@ class Item implements \JsonSerializable
      *
      * @return Item
      */
-    public function setMeasurementUnit(int $measure): self
+    public function setMeasure(int $measure): self
     {
         $this->measure = $measure;
         return $this;
