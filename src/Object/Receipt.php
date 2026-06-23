@@ -225,7 +225,7 @@ class Receipt implements \JsonSerializable
      */
     public function getTotal(): float
     {
-        return $this->total;
+        return round($this->total, 2);
     }
 
 
