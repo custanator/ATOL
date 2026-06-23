@@ -328,7 +328,7 @@ class Item implements \JsonSerializable
     private $quantity = 1.0;
 
     /**
-     * @var string $payment_object Признак предмета расчета
+     * @var int $payment_object Признак предмета расчета
      */
 
     private $payment_object = 1;
@@ -363,10 +363,10 @@ class Item implements \JsonSerializable
      * @param  float   $price
      * @param  float   $quantity
      * @param  Vat     $vat
-     * @param  string  $payment_object
+     * @param  int  $payment_object
      * @param  string  $payment_method
      */
-    public function __construct($name, $price, $quantity, $vat, $payment_object = 'commodity', $payment_method = 'full_payment')
+    public function __construct($name, $price, $quantity, $vat, $payment_object = 1, $payment_method = 'full_payment')
     {
         $this->setName($name);
         $this->setPrice($price);
@@ -543,20 +543,20 @@ class Item implements \JsonSerializable
 
 
     /**
-     * @return string
+     * @return int
      */
-    public function getPaymentObject(): string
+    public function getPaymentObject(): int
     {
         return $this->payment_object;
     }
 
 
     /**
-     * @param  string  $payment_object
+     * @param  int  $payment_object
      *
      * @return Item
      */
-    public function setPaymentObject(string $payment_object): self
+    public function setPaymentObject(int $payment_object): self
     {
         $this->payment_object = $payment_object;
         return $this;
@@ -585,7 +585,7 @@ class Item implements \JsonSerializable
 
 
     /**
-     * @return string
+     * @return int
      */
     public function getMeasurementUnit(): int
     {
@@ -594,7 +594,7 @@ class Item implements \JsonSerializable
 
 
     /**
-     * @param  string  $measure
+     * @param  int  $measure
      *
      * @return Item
      */
