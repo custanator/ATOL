@@ -356,7 +356,7 @@ class Receipt implements \JsonSerializable
             'items'             => $this->getItems(),
             'total'             => $this->getTotal(),
             'payments'          => $this->getPayments(),
-            'cashier '          => $this->getCashier(),
+            //'cashier '          => $this->getCashier(),
             'vats'              => $this->getVats(),
             'agent_info'        => $this->getAgentInfo(),
             'supplier_info'     => $this->getSupplierInfo()
