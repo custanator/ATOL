@@ -391,7 +391,7 @@ class Item implements \JsonSerializable
             'vat'               => $this->getVat(),
             'payment_object'    => $this->getPaymentObject(),
             'payment_method'    => $this->getPaymentMethod(),
-            'measurement_unit'  => $this->getMeasurementUnit(),
+            'measure'           => $this->getMeasurementUnit(),
             'agent_info'        => $this->getAgentInfo(),
             'supplier_info'     => $this->getSupplierInfo(),
         ], function ($property) {

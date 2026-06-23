@@ -28,9 +28,9 @@ class OperationRequestTest extends TestCase
         $quantity = 3;
         $sum = $price * $quantity;
         $vat = new Vat(Vat::TAX_VAT120, round($sum * 20 / 120, 2));
-        $payment_object = 'commodity';
+        $payment_object = 1;
         $payment_method = 'full_payment';
-        $measurement_unit = 'шт.';
+        $measure = 0;
 
         $item = new Item($title, $price, $quantity, $vat);
 
@@ -48,7 +48,7 @@ class OperationRequestTest extends TestCase
                 'vat'              => $vat,
                 'payment_object'   => $payment_object,
                 'payment_method'   => $payment_method,
-                'measurement_unit' => $measurement_unit,
+                'measure'          => $measure,
             ],
             $item->jsonSerialize()
         );
