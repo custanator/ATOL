@@ -34,7 +34,7 @@ class ApiClient implements IClient
     /**
      * @var string
      */
-    private $version = 'v4';
+    private $version = 'v5';
 
 
     /**

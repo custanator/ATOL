@@ -13,94 +13,154 @@ class Item implements \JsonSerializable
 {
 
     /**
-     * товар
+     * О реализуемом товаре, за исключением подакцизного товара и товара, подлежащего маркировке средствами идентификации
      */
-    public const PAYMENT_OBJECT_COMMODITY = 'commodity';
+    public const PAYMENT_OBJECT_COMMODITY = 1;
 
     /**
-     * подакцизный товар
+     * О реализуемом подакцизном товаре, за исключением товара, подлежащего маркировке средствами идентификации
      */
-    public const PAYMENT_OBJECT_EXCISE = 'excise';
+    public const PAYMENT_OBJECT_EXCISE = 2;
 
     /**
-     * работа
+     * О выполняемой работе
      */
-    public const PAYMENT_OBJECT_JOB = 'job';
+    public const PAYMENT_OBJECT_JOB = 3;
 
     /**
-     * услуга
+     * Об оказываемой услуге
      */
-    public const PAYMENT_OBJECT_SERVICE = 'service';
+    public const PAYMENT_OBJECT_SERVICE = 4;
 
     /**
-     * ставка азартной игры
+     * О приеме ставок при осуществлении деятельности по проведению азартных игр
      */
-    public const PAYMENT_OBJECT_GAMBLING_BET = 'gambling_bet';
+    public const PAYMENT_OBJECT_GAMBLING_BET = 5;
 
     /**
-     * выигрыш азартной игры
+     * О выплате денежных средств в виде выигрыша при осуществлении деятельности по проведению азартных игр
      */
-    public const PAYMENT_OBJECT_GAMBLING_PRIZE = 'gambling_prize';
+    public const PAYMENT_OBJECT_GAMBLING_PRIZE = 6;
 
     /**
-     * лотерейный билет
+     * О приеме денежных средств при реализации лотерейных билетов, электронных лотерейных билетов, приеме лотерейных ставок
      */
-    public const PAYMENT_OBJECT_LOTTERY = 'lottery';
+    public const PAYMENT_OBJECT_LOTTERY = 7;
 
     /**
-     * выигрыш лотереи
+     * О выплате денежных средств в виде выигрыша при осуществлении деятельности по проведению лотерей
      */
-    public const PAYMENT_OBJECT_LOTTERY_PRIZE = 'lottery_prize';
+    public const PAYMENT_OBJECT_LOTTERY_PRIZE = 8;
 
     /**
-     * предоставление результатов интеллектуальной деятельности
+     * О предоставлении прав на использование результатов интеллектуальной деятельности или средств индивидуализации
      */
-    public const PAYMENT_OBJECT_INTELLECTUAL_ACTIVITY = 'intellectual_activity';
+    public const PAYMENT_OBJECT_INTELLECTUAL_ACTIVITY = 9;
 
     /**
-     * платеж
+     * Об авансе, задатке, предоплате, кредите
      */
-    public const PAYMENT_OBJECT_PAYMENT = 'payment';
+    public const PAYMENT_OBJECT_PAYMENT = 10;
 
     /**
-     * агентское вознаграждение
+     * О вознаграждении пользователя, являющегося платежным агентом (субагентом), банковским платежным агентом (субагентом), комиссионером, поверенным или иным агентом
      */
-    public const PAYMENT_OBJECT_AGENT_COMMISSION = 'agent_commission';
+    public const PAYMENT_OBJECT_AGENT_COMMISSION = 11;
 
     /**
-     * составной предмет расчета
+     * О взносе в счет оплаты, пени, штрафе, вознаграждении, бонусе и ином аналогичном предмете расчета
      */
-    public const PAYMENT_OBJECT_COMPOSITE = 'composite';
+    public const PAYMENT_OBJECT_COMPOSITE = 12;
 
     /**
-     * иной предмет расчета
+     * О предмете расчета, не относящемуся к предметам расчета, которым может быть присвоено значение от «1» до «11» и от «14» до «26»
      */
-    public const PAYMENT_OBJECT_ANOTHER = 'another';
+    public const PAYMENT_OBJECT_ANOTHER = 13;
 
     /**
-     * имущественное право
+     * О передаче имущественных прав
      */
-    public const PAYMENT_OBJECT_PROPERTY_RIGHT = 'property_right';
+    public const PAYMENT_OBJECT_PROPERTY_RIGHT = 14;
 
     /**
-     * внереализационный доход
+     * О внереализационном доходе
      */
-    public const PAYMENT_OBJECT_NON_OPERATING_GAIN = 'non-operating_gain';
+    public const PAYMENT_OBJECT_NON_OPERATING_GAIN = 15;
 
     /**
-     * страховые взносы
+     * О суммах расходов, платежей и взносов, уменьшающих сумму налога
      */
-    public const PAYMENT_OBJECT_INSURANCE_PREMIUM = 'insurance_premium';
+    public const PAYMENT_OBJECT_TAX_REDUCTION = 16;
 
     /**
-     * торговый сбор
+     * О суммах уплаченного торгового сбора
      */
-    public const PAYMENT_OBJECT_SALES_TAX = 'sales_tax';
+    public const PAYMENT_OBJECT_SALES_TAX = 17;
 
     /**
-     * курортный сбор
+     * Туристический налог
      */
-    public const PAYMENT_OBJECT_RESORT_FEE = 'resort_fee';
+    public const PAYMENT_OBJECT_RESORT_FEE = 18;
+
+    /**
+     * О залоге
+     */
+    public const PAYMENT_OBJECT_COLLATERAL = 19;
+
+    /**
+     * О суммах произведенных расходов, уменьшающих доход
+     */
+    public const PAYMENT_OBJECT_EXPENSES_REDUCTION = 20;
+
+    /**
+     * О страховых взносах на обязательное пенсионное страхование, уплачиваемых ИП, не производящими выплаты и иные вознаграждения физическим лицам
+     */
+    public const PAYMENT_OBJECT_INSURANCE_PREMIUM_IP_PENSION = 21;
+
+    /**
+     * О страховых взносах на обязательное пенсионное страхование, уплачиваемых организациями и ИП, производящими выплаты и иные вознаграждения физическим лицам
+     */
+    public const PAYMENT_OBJECT_INSURANCE_PREMIUM_ORG_PENSION = 22;
+
+    /**
+     * О страховых взносах на обязательное медицинское страхование, уплачиваемых ИП, не производящими выплаты и иные вознаграждения физическим лицам
+     */
+    public const PAYMENT_OBJECT_INSURANCE_PREMIUM_IP_MEDICAL = 23;
+
+    /**
+     * О страховых взносах на обязательное медицинское страхование, уплачиваемые организациями и ИП, производящими выплаты и иные вознаграждения физическим лицам
+     */
+    public const PAYMENT_OBJECT_INSURANCE_PREMIUM_ORG_MEDICAL = 24;
+
+    /**
+     * О страховых взносах на обязательное социальное страхование
+     */
+    public const PAYMENT_OBJECT_INSURANCE_PREMIUM_SOCIAL = 25;
+
+    /**
+     * О приеме и выплате денежных средств при осуществлении казино и залами игровых автоматов расчетов с использованием обменных знаков игорного заведения
+     */
+    public const PAYMENT_OBJECT_GAMBLING_EXCHANGE = 26;
+
+    /**
+     * О выдаче денежных средств банковским платежным агентом
+     */
+    public const PAYMENT_OBJECT_BANK_AGENT_PAYOUT = 27;
+
+    /**
+     * О реализуемом подакцизном товаре, подлежащем маркировке средством идентификации, не имеющем кода маркировки
+     */
+    public const PAYMENT_OBJECT_EXCISE_MARKED_WITHOUT_CODE = 30;
+
+    /**
+     * О реализуемом подакцизном товаре, подлежащем маркировке средством идентификации, имеющем код маркировки
+     */
+    public const PAYMENT_OBJECT_EXCISE_MARKED_WITH_CODE = 31;
+
+    /**
+     * О реализуемом товаре, подлежащем маркировке средством идентификации, имеющем код маркировки, за исключением подакцизного товара
+     */
+    public const PAYMENT_OBJECT_MARKED_WITH_CODE = 33;
 
     /**
      *  предоплата 100%. Полная предварительная оплата до момента передачи предмета расчета
@@ -137,6 +197,126 @@ class Item implements \JsonSerializable
      */
     public const PAYMENT_METHOD_CREDIT_PAYMENT = 'credit_payment';
 
+    /**
+     * Применяется для предметов расчета, которые могут быть реализованы поштучно или единицами
+     */
+    public const MEASURE_UNIT_PIECE = 0;
+
+    /**
+     * Грамм
+     */
+    public const MEASURE_UNIT_GRAM = 10;
+
+    /**
+     * Килограмм
+     */
+    public const MEASURE_UNIT_KILOGRAM = 11;
+
+    /**
+     * Тонна
+     */
+    public const MEASURE_UNIT_TON = 12;
+
+    /**
+     * Сантиметр
+     */
+    public const MEASURE_UNIT_CENTIMETER = 20;
+
+    /**
+     * Дециметр
+     */
+    public const MEASURE_UNIT_DECIMETER = 21;
+
+    /**
+     * Метр
+     */
+    public const MEASURE_UNIT_METER = 22;
+
+    /**
+     * Квадратный сантиметр
+     */
+    public const MEASURE_UNIT_SQUARE_CENTIMETER = 30;
+
+    /**
+     * Квадратный дециметр
+     */
+    public const MEASURE_UNIT_SQUARE_DECIMETER = 31;
+
+    /**
+     * Квадратный метр
+     */
+    public const MEASURE_UNIT_SQUARE_METER = 32;
+
+    /**
+     * Миллилитр
+     */
+    public const MEASURE_UNIT_MILLILITER = 40;
+
+    /**
+     * Литр
+     */
+    public const MEASURE_UNIT_LITER = 41;
+
+    /**
+     * Кубический метр
+     */
+    public const MEASURE_UNIT_CUBIC_METER = 42;
+
+    /**
+     * Киловатт час
+     */
+    public const MEASURE_UNIT_KILOWATT_HOUR = 50;
+
+    /**
+     * Гигакалория
+     */
+    public const MEASURE_UNIT_GIGACALORIE = 51;
+
+    /**
+     * Сутки (день)
+     */
+    public const MEASURE_UNIT_DAY = 70;
+
+    /**
+     * Час
+     */
+    public const MEASURE_UNIT_HOUR = 71;
+
+    /**
+     * Минута
+     */
+    public const MEASURE_UNIT_MINUTE = 72;
+
+    /**
+     * Секунда
+     */
+    public const MEASURE_UNIT_SECOND = 73;
+
+    /**
+     * Килобайт
+     */
+    public const MEASURE_UNIT_KILOBYTE = 80;
+
+    /**
+     * Мегабайт
+     */
+    public const MEASURE_UNIT_MEGABYTE = 81;
+
+    /**
+     * Гигабайт
+     */
+    public const MEASURE_UNIT_GIGABYTE = 82;
+
+    /**
+     * Терабайт
+     */
+    public const MEASURE_UNIT_TERABYTE = 83;
+
+    /**
+     * Применяется при использовании иных единиц измерения
+     */
+    public const MEASURE_UNIT_OTHER = 255;
+
     private $sum = 0.0;
 
     private $vat = null;
@@ -146,18 +326,20 @@ class Item implements \JsonSerializable
     private $price = 0.0;
 
     private $quantity = 1.0;
+
     /**
      * @var string $payment_object Признак предмета расчета
      */
-    private $payment_object = 'commodity';
+
+    private $payment_object = 1;
     /**
      * @var string $payment_method Признак способа расчета
      */
-    private $payment_method = 'full_prepayment';
+    private $payment_method = 'full_payment';
     /**
-     * @var string $measurement_unit Единица измерения предмета расчета
+     * @var int $measure Единица измерения предмета расчета
      */
-    private $measurement_unit = 'шт.';
+    private $measure = 0;
 
     /**
      * Информация об агенте
@@ -405,20 +587,20 @@ class Item implements \JsonSerializable
     /**
      * @return string
      */
-    public function getMeasurementUnit(): string
+    public function getMeasurementUnit(): int
     {
-        return $this->measurement_unit;
+        return $this->measure;
     }
 
 
     /**
-     * @param  string  $measurement_unit
+     * @param  string  $measure
      *
      * @return Item
      */
-    public function setMeasurementUnit(string $measurement_unit): self
+    public function setMeasurementUnit(int $measure): self
     {
-        $this->measurement_unit = $measurement_unit;
+        $this->measure = $measure;
         return $this;
     }
 }

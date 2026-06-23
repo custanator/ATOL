@@ -23,6 +23,16 @@ class Vat implements \JsonSerializable
     public const TAX_VAT0 = 'vat0';
 
     /**
+     *  НДС по ставке 5%.
+     */
+    public const TAX_VAT5 = 'vat5';
+
+    /**
+     *  НДС по ставке 7%.
+     */
+    public const TAX_VAT7 = 'vat7';
+
+    /**
      * НДС чека по ставке 10%.
      */
     public const TAX_VAT10 = 'vat10';
@@ -53,6 +63,26 @@ class Vat implements \JsonSerializable
     public const TAX_VAT120 = 'vat120';
 
     /**
+     * НДС чека по ставке 22%.
+     */
+    public const TAX_VAT22 = 'vat22';
+
+    /**
+     * НДС чека по расчетной ставке 22/122.
+     */
+    public const TAX_VAT122 = 'vat122';
+
+    /**
+     * НДС чека по расчетной ставке 5/105.
+     */
+    public const TAX_VAT105 = 'vat105';
+
+    /**
+     * НДС чека по расчетной ставке 7/107.
+     */
+    public const TAX_VAT107 = 'vat107';
+
+    /**
      * Вид налога.
      *
      * @var string
@@ -61,7 +91,7 @@ class Vat implements \JsonSerializable
 
     /**
      * Сумма налога позиции в рублях.
-     *  целая часть не более 8 знаков
+     *  целая часть не более 11 знаков
      *  дробная часть не более 2 знаков
      *
      * @var double|null
