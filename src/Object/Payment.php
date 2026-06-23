@@ -50,10 +50,11 @@ class Payment implements \JsonSerializable
     public function jsonSerialize(): array
     {
         return [
-            'sum'  => $this->getSum(),
+            'sum'  => round($this->getSum(), 2),
             'type' => $this->getType(),
         ];
     }
+
 
 
     /**
